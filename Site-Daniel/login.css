@@ -1,0 +1,110 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    background: rgb(53, 63, 103);
+}
+
+.login {
+    background: rgb(105, 126, 220);
+    border-radius: 10px;
+    width: 350px;
+    padding: 40px;
+    box-shadow: 0px 1px 10px rgba(0, 0, 0, 0.61);
+}
+
+.login h2 {
+    font-family: 'Poppins', sans-serif;
+    margin-bottom: 30px;
+    font-size: 35px;
+    color: #fff;
+    text-align: center;
+}
+
+.login .box-user {
+    position: relative;
+}
+
+.login .box-user input {
+    width: 100%;
+    padding: 10px 0;
+    background: transparent;
+    border: none;
+    outline: none;
+    border-bottom: 1px solid #fff;
+    color: #fff;
+    font-size: 16px;
+    margin-bottom: 30px;
+    font-family: 'Poppins', sans-serif;
+}
+
+.login .box-user label {
+    position: absolute;
+    top: 0;
+    left: 0;
+    padding: 10px 0;
+    color: #fff;
+    font-size: 16px;
+    pointer-events: none;
+    transition: .5s;
+    font-family: 'Poppins', sans-serif;
+}
+
+.login .box-user input:focus~label,
+.login .box-user input:valid~label 
+{
+    top: -20px;
+    left: 0;
+    color: #03e9f4;
+    font-size: 12px;
+}
+
+.forget {
+    font-size: 12px;
+    color: #5b6b8b;
+    float: right;
+}
+
+button {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    position: relative;
+    display: inline-block;
+    background-color: #4c57b3;
+    color: white;
+    padding: 12px 20px;
+    font-size: 12px;
+    font-weight: 700;
+    border: none;
+    border-radius: 3px;
+    margin-top: 20px;
+    cursor: pointer;
+    letter-spacing: 1px;
+    box-shadow: 0px 1px 10px rgba(0, 0, 0, 0.61);
+}
+
+button:hover {
+    background-color: rgb(105, 126, 220);
+}
+
+footer {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    background-color: rgb(105, 126, 220);
+    color: white;
+    text-align: center;
+    padding: 20px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    border-radius: 15px;
+    box-shadow: 0px 1px 10px rgba(0, 0, 0, 0.61);
+}
+
+
